@@ -1,0 +1,9 @@
+[package]
+name = "lines"
+version = "1.0.3"
+authors = ["Cheuk Yin Ng <cheukyin699@yahoo.com>"]
+
+[dependencies]
+docopt = "0.8.1"
+serde = "1.0.8"
+serde_derive = "1.0.8"
