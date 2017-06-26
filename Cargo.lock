@@ -1,5 +1,5 @@
 [root]
-name = "lines"
+name = "catlines"
 version = "1.0.3"
 dependencies = [
  "docopt 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)",
