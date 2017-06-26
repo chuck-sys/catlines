@@ -1,5 +1,5 @@
 [package]
-name = "lines"
+name = "catlines"
 version = "1.0.3"
 authors = ["Cheuk Yin Ng <cheukyin699@yahoo.com>"]
 description = "Controls file output with line ranges!"
