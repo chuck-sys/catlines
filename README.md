@@ -1,8 +1,8 @@
-# lines
+# catlines
 
 > It's like cat, but better!
 
-`lines` takes a file name and the range of lines (inclusive) and prints that
+`catlines` takes a file name and the range of lines (inclusive) and prints that
 section of the file to standard output. Useful if you want to pipe to your
 clipboard, or something like that.
 
@@ -15,8 +15,8 @@ the line number is displayed.
 # Usage
 
 ```
-Usage: lines [options] <file> <start> <stop>
-       lines (--help | --version)
+Usage: catlines [options] <file> <start> <stop>
+       catlines (--help | --version)
 
 Description:
     Prints only said section from the file, ranging [start,stop] (inclusive at

@@ -14,8 +14,8 @@ mod lines_args;
 use lines_args::*;
 
 const USAGE: &'static str = "
-Usage: lines [options] <file> <start> <stop>
-       lines (--help | --version)
+Usage: catlines [options] <file> <start> <stop>
+       catlines (--help | --version)
 
 Description:
     Prints only said section from the file, ranging [start,stop] (inclusive at
