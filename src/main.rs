@@ -31,11 +31,13 @@ Options:
 fn main() {
     let raw_args: Vec<_> = env::args().collect();
     let args: Args = Docopt::new(USAGE)
-                        .and_then(|d| d.argv(raw_args.into_iter()).deserialize())
-                        .unwrap_or_else(|e| e.exit());
+        .and_then(|d| d.argv(raw_args.into_iter()).deserialize())
+        .unwrap_or_else(|e| e.exit());
 
     if args.flag_version {
-        println!("{} v{}\n", env!("CARGO_PKG_NAME"), env!("CARGO_PKG_VERSION"));
+        println!("{} v{}\n",
+                 env!("CARGO_PKG_NAME"),
+                 env!("CARGO_PKG_VERSION"));
         println!("Author:");
         println!("{}", env!("CARGO_PKG_AUTHORS"));
         return;
@@ -52,8 +54,8 @@ fn main() {
             if args.flag_lines {
                 // Print line number
                 let max_len = match args.flag_spaces {
-                    None    => args.arg_stop.to_string().len(),
-                    Some(n) => n
+                    None => args.arg_stop.to_string().len(),
+                    Some(n) => n,
                 };
                 println!("{:01$}:{2}", index, max_len, line.unwrap());
             } else {

@@ -31,5 +31,3 @@ pub fn check_args(args: Args) -> Result<Args, &'static str> {
         Ok(args)
     }
 }
-
-
