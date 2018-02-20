@@ -6,7 +6,6 @@ description = "Controls file output with line ranges!"
 repository = "https://github.com/cheukyin699/rust-lines"
 readme = "README.md"
 keywords = ["ranges", "lines"]
-license = "GPL-3.0"
 license-file = "LICENSE"
 
 [dependencies]
